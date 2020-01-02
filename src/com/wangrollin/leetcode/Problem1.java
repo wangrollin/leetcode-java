@@ -17,9 +17,9 @@ package com.wangrollin.leetcode;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/two-sum
  */
-public class Number1 {
+public class Problem1 {
 
-    public int[] twoSum(int[] nums, int target) {
+    public int[] solution1(int[] nums, int target) {
         // 假设给的数据都是OK的，不做异常处理
         int len = nums.length;
         for(int i = 1; i<len ; ++i) {

@@ -1,4 +1,4 @@
-package com.wangrollin.leetcode;
+package com.wangrollin.leetcode.problem2;
 
-public class Problem2 {
+public class Solution1 {
 }

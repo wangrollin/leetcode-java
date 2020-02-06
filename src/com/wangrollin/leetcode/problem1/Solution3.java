@@ -1,5 +1,8 @@
 package com.wangrollin.leetcode.problem1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 两数之和
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
@@ -14,20 +17,19 @@ package com.wangrollin.leetcode.problem1;
  * 链接：https://leetcode-cn.com/problems/two-sum
  *
  *
- * Solution1
- * 最简单的遍历方法
+ * Solution3
+ * 把数组中的数值和索引放入map的过程中，就去找当前数字的互补数字是否在map中
  */
-public class Solution1 {
+public class Solution3 {
 
-    private static int[] solveProblem(int[] nums, int target) {
-        // 假设给的数据都是OK的，不做异常处理
-        int len = nums.length;
-        for(int i = 1; i<len ; ++i) {
-            for (int j = 0; j < i; ++j) {
-                if(nums[j] + nums[i] == target) {
-                    return new int[]{j, i};
-                }
+    private static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; ++i) {
+            int num2 = target - nums[i];
+            if (map.containsKey(num2)) {
+                return new int[]{map.get(num2), i};
             }
+            map.put(nums[i], i);
         }
         return null;
     }

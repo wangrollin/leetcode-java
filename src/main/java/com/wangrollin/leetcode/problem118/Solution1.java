@@ -29,7 +29,7 @@ public class Solution1 {
 
     public static List<List<Integer>> generate(int numRows) {
         if (numRows == 0) {
-            return new ArrayList<List<Integer>>();
+            return new ArrayList<>();
         }
 
         List<List<Integer>> result = new ArrayList<>();

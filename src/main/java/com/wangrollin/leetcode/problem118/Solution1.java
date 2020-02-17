@@ -48,10 +48,9 @@ public class Solution1 {
 
     public static void main(String[] args) {
         List<List<Integer>> result = generate(5);
-        for (int i = 0; i < result.size(); i++) {
-
-            for (int j = 0; j < result.get(i).size(); j++) {
-                System.out.print(result.get(i).get(j) + ",");
+        for (List<Integer> integers : result) {
+            for (Integer integer : integers) {
+                System.out.print(integer + ",");
             }
             System.out.println();
         }

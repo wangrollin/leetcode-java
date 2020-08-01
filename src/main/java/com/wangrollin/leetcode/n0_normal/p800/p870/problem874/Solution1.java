@@ -2,6 +2,7 @@ package com.wangrollin.leetcode.n0_normal.p800.p870.problem874;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -46,9 +47,9 @@ public class Solution1 {
     private static final String LEFT = "LEFT";
     private static final String RIGHT = "RIGHT";
 
-    private static final Set<Pair<Integer, Integer>> obstaclesSet = new HashSet<>();
-
     public static int robotSim(int[] commands, int[][] obstacles) {
+
+        Set<Pair<Integer, Integer>> obstaclesSet = new HashSet<>();
 
         Arrays.stream(obstacles).forEach(obstacle -> {
             obstaclesSet.add(new Pair(obstacle[0], obstacle[1]));
@@ -95,7 +96,7 @@ public class Solution1 {
                     break;
                 default:
                     Pair<Integer, Integer> resultPosition
-                            = tryToGo(positionX, positionY, direction, command);
+                            = tryToGo(positionX, positionY, direction, command, obstaclesSet);
                     positionX = resultPosition.getKey();
                     positionY = resultPosition.getValue();
                     maxLen = Math.max(maxLen, positionX * positionX + positionY * positionY);
@@ -107,7 +108,8 @@ public class Solution1 {
     }
 
     private static Pair<Integer, Integer> tryToGo(int positionX, int positionY,
-                                                  String direction, int stepLen) {
+                                                  String direction, int stepLen,
+                                                  Set<Pair<Integer, Integer>> obstaclesSet) {
 
         switch (direction) {
             case UP:
@@ -143,13 +145,6 @@ public class Solution1 {
         }
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(robotSim(new int[]{-2, -1, 4, 7, 8},
-                new int[][]{new int[]{1, 1}, new int[]{2, 1}, new int[]{4, 4}, new int[]{5, -5}, new int[]{2, -3},
-                        new int[]{-2, -3}, new int[]{-1, -3}, new int[]{-4, -1}, new int[]{-4, 3}, new int[]{5, 1}}));
-    }
-
     private static class Pair<K, V> {
 
         private K key;
@@ -175,5 +170,37 @@ public class Solution1 {
         public void setValue(V value) {
             this.value = value;
         }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) {
+                return true;
+            }
+            if (!(o instanceof Pair)) {
+                return false;
+            }
+            Pair<?, ?> pair = (Pair<?, ?>) o;
+            return getKey().equals(pair.getKey()) &&
+                    getValue().equals(pair.getValue());
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(getKey(), getValue());
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(robotSim(new int[]{-2, -1, 4, 7, 8},
+                new int[][]{new int[]{1, 1}, new int[]{2, 1}, new int[]{4, 4}, new int[]{5, -5}, new int[]{2, -3},
+                        new int[]{-2, -3}, new int[]{-1, -3}, new int[]{-4, -1}, new int[]{-4, 3}, new int[]{5, 1}}));
+
+        System.out.println(robotSim(new int[]{4, -1, 4, -2, 4},
+                new int[][]{new int[]{2, 4}}));
+
+        System.out.println(robotSim(new int[]{-2, -1, 4, 7, 8},
+                new int[][]{new int[]{1, 1}, new int[]{2, 1}, new int[]{4, 4}, new int[]{5, -5}, new int[]{2, -3},
+                        new int[]{-2, -3}, new int[]{-1, -3}, new int[]{-4, -1}, new int[]{-4, 3}, new int[]{5, 1}}));
     }
 }

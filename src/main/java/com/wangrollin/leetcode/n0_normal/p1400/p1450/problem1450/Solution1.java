@@ -37,7 +37,7 @@ package com.wangrollin.leetcode.n0_normal.p1400.p1450.problem1450;
  * startTime.length == endTime.length
  * 1 <= startTime.length <= 100
  * 1 <= startTime[i] <= endTime[i] <= 1000
- * 1 <= queryTime <= 1000
+ * 1 <=queryTime <= 1000
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/number-of-students-doing-homework-at-a-given-time

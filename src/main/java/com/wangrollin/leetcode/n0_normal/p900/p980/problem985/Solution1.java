@@ -3,11 +3,11 @@ package com.wangrollin.leetcode.n0_normal.p900.p980.problem985;
 /**
  * 查询后的偶数和
  *
- * 给出一个整数数组 A 和一个查询数组 queries。
- * 对于第 i 次查询，有 val = queries[i][0], index = queries[i][1]，我们会把 val 加到 A[index] 上。
- * 然后，第 i 次查询的答案是 A 中偶数值的和。
- * （此处给定的 index = queries[i][1] 是从 0 开始的索引，每次查询都会永久修改数组 A。）
- * 返回所有查询的答案。你的答案应当以数组 answer 给出，answer[i] 为第 i 次查询的答案。
+ * 给出一个整数数组A和一个查询数组queries。
+ * 对于第i次查询，有val =queries[i][0], index= queries[i][1]，我们会把val加到A[index]上。
+ * 然后，第i次查询的答案是 A 中偶数值的和。
+ * （此处给定的index = queries[i][1]是从 0 开始的索引，每次查询都会永久修改数组A。）
+ * 返回所有查询的答案。你的答案应当以数组answer给出，answer[i]为第i次查询的答案。
  *
  * 示例：
  * 输入：A = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]

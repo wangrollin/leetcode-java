@@ -21,10 +21,10 @@ import java.util.Set;
  * 输入：paths = [["B","C"],["D","B"],["C","A"]]
  * 输出："A"
  * 解释：所有可能的线路是：
- * "D" -> "B" -> "C" -> "A". 
- * "B" -> "C" -> "A". 
- * "C" -> "A". 
- * "A". 
+ * "D" -> "B" -> "C" -> "A".
+ * "B" -> "C" -> "A".
+ * "C" -> "A".
+ * "A".
  * 显然，旅行终点站是 "A" 。
  *
  * 示例 3：
@@ -34,8 +34,8 @@ import java.util.Set;
  * 提示：
  * 1 <= paths.length <= 100
  * paths[i].length == 2
- * 1 <= cityAi.length, cityBi.length <= 10
- * cityAi != cityBi
+ * 1 <=cityAi.length,cityBi.length <= 10
+ * cityAi!=cityBi
  * 所有字符串均由大小写英文字母和空格字符组成。
  *
  * 来源：力扣（LeetCode）

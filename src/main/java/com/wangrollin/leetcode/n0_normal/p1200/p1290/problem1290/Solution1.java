@@ -3,10 +3,10 @@ package com.wangrollin.leetcode.n0_normal.p1200.p1290.problem1290;
 /**
  * 二进制链表转整数
  *
- * 给你一个单链表的引用结点 head。链表中每个结点的值不是 0 就是 1。
+ * 给你一个单链表的引用结点head。链表中每个结点的值不是 0 就是 1。
  * 已知此链表是一个整数数字的二进制表示形式。
  * 请你返回该链表所表示数字的 十进制值 。
- *  
+ * 
  * 示例 1：
  * 输入：head = [1,0,1]
  * 输出：5
@@ -30,8 +30,8 @@ package com.wangrollin.leetcode.n0_normal.p1200.p1290.problem1290;
  *
  * 提示：
  * 链表不为空。
- * 链表的结点总数不超过 30。
- * 每个结点的值不是 0 就是 1。
+ * 链表的结点总数不超过30。
+ * 每个结点的值不是0 就是 1。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer

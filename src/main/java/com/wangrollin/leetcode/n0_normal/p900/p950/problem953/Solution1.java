@@ -25,12 +25,12 @@ import java.util.Map;
  * 输出：false
  * 解释：当前三个字符 "app" 匹配时，第二个字符串相对短一些，然后根据词典编纂规则 "apple" > "app"，因为 'l' > '∅'，
  * 其中 '∅' 是空白字符，定义为比任何其他字符都小（更多信息）。
- *  
+ *
  * 提示：
  * 1 <= words.length <= 100
  * 1 <= words[i].length <= 20
  * order.length == 26
- * 在 words[i] 和 order 中的所有字符都是英文小写字母。
+ * 在words[i]和order中的所有字符都是英文小写字母。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/verifying-an-alien-dictionary

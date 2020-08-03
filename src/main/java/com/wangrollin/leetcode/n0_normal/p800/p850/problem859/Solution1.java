@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * 亲密字符串
  *
- * 给定两个由小写字母构成的字符串 A 和 B ，只要我们可以通过交换 A 中的两个字母得到与 B 相等的结果，就返回 true ；否则返回 false 。
+ * 给定两个由小写字母构成的字符串A和B，只要我们可以通过交换 A 中的两个字母得到与 B 相等的结果，就返回true；否则返回 false 。
  *
  * 示例 1：
  * 输入： A = "ab", B = "ba"
@@ -27,11 +27,11 @@ import java.util.Set;
  * 示例 5：
  * 输入： A = "", B = "aa"
  * 输出： false
- *  
+ * 
  * 提示：
  * 0 <= A.length <= 20000
  * 0 <= B.length <= 20000
- * A 和 B 仅由小写字母构成。
+ * A和B仅由小写字母构成。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/buddy-strings

@@ -8,13 +8,13 @@ package com.wangrollin.leetcode.n0_normal.p300.p390.problem392;
  * 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。
  * （例如，"ace"是"abcde"的一个子序列，而"aec"不是）。
  *
- * 示例 1:
+ * 示例1:
  * s = "abc", t = "ahbgdc"
- * 返回 true.
+ * 返回true.
  *
- * 示例 2:
+ * 示例2:
  * s = "axc", t = "ahbgdc"
- * 返回 false.
+ * 返回false.
  *
  * 后续挑战 :
  * 如果有大量输入的 S，称作S1, S2, ... , Sk 其中 k >= 10亿，你需要依次检查它们是否为 T 的子序列。

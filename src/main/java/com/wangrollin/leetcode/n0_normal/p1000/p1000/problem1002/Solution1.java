@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * 示例 2：
  * 输入：["cool","lock","cook"]
  * 输出：["c","o"]
- *  
+ *
  * 提示：
  * 1 <= A.length <= 100
  * 1 <= A[i].length <= 100

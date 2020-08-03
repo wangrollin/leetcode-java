@@ -14,7 +14,7 @@ package com.wangrollin.leetcode.n0_normal.p700.p700.problem709;
  * 输入: "here"
  * 输出: "here"
  *
- * 示例 3：
+ * 示例3：
  * 输入: "LOVELY"
  * 输出: "lovely"
  *

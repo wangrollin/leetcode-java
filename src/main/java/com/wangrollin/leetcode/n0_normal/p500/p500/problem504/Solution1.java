@@ -13,7 +13,7 @@ package com.wangrollin.leetcode.n0_normal.p500.p500.problem504;
  * 输入: -7
  * 输出: "-10"
  *
- * 注意: 输入范围是 [-1e7, 1e7] 。
+ * 注意: 输入范围是[-1e7, 1e7] 。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/base-7

@@ -17,10 +17,10 @@ package com.wangrollin.leetcode.n0_normal.p700.p740.problem747;
  * 输入: nums = [1, 2, 3, 4]
  * 输出: -1
  * 解释: 4没有超过3的两倍大, 所以我们返回 -1.
- *  
+ *
  * 提示:
- * nums 的长度范围在[1, 50].
- * 每个 nums[i] 的整数范围在 [0, 100].
+ * nums的长度范围在[1, 50].
+ * 每个nums[i]的整数范围在[0, 100].
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/largest-number-at-least-twice-of-others

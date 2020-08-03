@@ -7,14 +7,14 @@ package com.wangrollin.leetcode.n0_normal.p100.p170.problem172;
  * 示例 1:
  * 输入: 3
  * 输出: 0
- * 解释: 3! = 6, 尾数中没有零。
+ * 解释:3! = 6, 尾数中没有零。
  *
- * 示例 2:
+ * 示例2:
  * 输入: 5
  * 输出: 1
- * 解释: 5! = 120, 尾数中有 1 个零.
+ * 解释:5! = 120, 尾数中有 1 个零.
  *
- * 说明: 你算法的时间复杂度应为 O(log n) 。
+ * 说明: 你算法的时间复杂度应为O(logn)。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/factorial-trailing-zeroes

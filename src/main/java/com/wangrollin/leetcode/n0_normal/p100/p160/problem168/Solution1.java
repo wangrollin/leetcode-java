@@ -18,11 +18,11 @@ package com.wangrollin.leetcode.n0_normal.p100.p160.problem168;
  * 输入: 1
  * 输出: "A"
  *
- * 示例 2:
+ * 示例2:
  * 输入: 28
  * 输出: "AB"
  *
- * 示例 3:
+ * 示例3:
  * 输入: 701
  * 输出: "ZY"
  *

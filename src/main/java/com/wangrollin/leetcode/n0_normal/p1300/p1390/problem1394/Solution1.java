@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * 给你一个整数数组 arr，请你从中找出并返回一个幸运数。
  * 如果数组中存在多个幸运数，只需返回 最大 的那个。
  * 如果数组中不含幸运数，则返回 -1 。
- *  
+ * 
  * 示例 1：
  * 输入：arr = [2,2,3,4]
  * 输出：2
@@ -35,7 +35,7 @@ import java.util.stream.Collectors;
  * 示例 5：
  * 输入：arr = [7,7,7,7,7,7,7]
  * 输出：7
- *  
+ * 
  * 提示：
  * 1 <= arr.length <= 500
  * 1 <= arr[i] <= 500

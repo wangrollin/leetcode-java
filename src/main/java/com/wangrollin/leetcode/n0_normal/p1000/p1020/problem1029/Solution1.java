@@ -18,7 +18,7 @@ import java.util.Comparator;
  * 第三个人去 B 市，费用为 50。
  * 第四个人去 B 市，费用为 20。
  * 最低总费用为 10 + 30 + 50 + 20 = 110，每个城市都有一半的人在面试。
- *  
+ * 
  * 提示：
  * 1 <= costs.length <= 100
  * costs.length 为偶数

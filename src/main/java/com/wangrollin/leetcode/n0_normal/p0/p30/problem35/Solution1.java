@@ -9,7 +9,7 @@ package com.wangrollin.leetcode.n0_normal.p0.p30.problem35;
  * 输入: [1,3,5,6], 5
  * 输出: 2
  *
- * 示例 2:
+ * 示例2:
  * 输入: [1,3,5,6], 2
  * 输出: 1
  *

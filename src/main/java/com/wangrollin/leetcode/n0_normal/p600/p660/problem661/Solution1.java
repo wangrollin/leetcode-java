@@ -4,7 +4,7 @@ package com.wangrollin.leetcode.n0_normal.p600.p660.problem661;
  * 图片平滑器
  *
  * 包含整数的二维矩阵 M 表示一个图片的灰度。
- * 你需要设计一个平滑器来让每一个单元的灰度成为平均灰度 (向下舍入) ，
+ * 你需要设计一个平滑器来让每一个单元的灰度成为平均灰度(向下舍入) ，
  * 平均灰度的计算是周围的8个单元和它本身的值求平均，
  * 如果周围的单元格不足八个，则尽可能多的利用它们。
  *
@@ -24,7 +24,7 @@ package com.wangrollin.leetcode.n0_normal.p600.p660.problem661;
  *
  * 注意:
  * 给定矩阵中的整数范围为 [0, 255]。
- * 矩阵的长和宽的范围均为 [1, 150]。
+ * 矩阵的长和宽的范围均为[1, 150]。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/image-smoother

@@ -19,10 +19,10 @@ package com.wangrollin.leetcode.n0_normal.p1400.p1480.problem1480;
  * 示例 3：
  * 输入：nums = [3,1,2,10,1]
  * 输出：[3,4,6,16,17]
- *  
+ *
  * 提示：
  * 1 <= nums.length <= 1000
- * -10^6 <= nums[i] <= 10^6
+ * -10^6<= nums[i] <=10^6
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/running-sum-of-1d-array

@@ -28,12 +28,12 @@ package com.wangrollin.leetcode.n0_normal.p1500.p1520.problem1528;
  * 示例 5：
  * 输入：s = "art", indices = [1,0,2]
  * 输出："rat"
- *  
+ *
  * 提示：
  * s.length == indices.length == n
  * 1 <= n <= 100
  * s 仅包含小写英文字母。
- * 0 <= indices[i] < n
+ * 0 <= indices[i] <n
  * indices 的所有的值都是唯一的（也就是说，indices 是整数 0 到 n - 1 形成的一组排列）。
  *
  * 来源：力扣（LeetCode）

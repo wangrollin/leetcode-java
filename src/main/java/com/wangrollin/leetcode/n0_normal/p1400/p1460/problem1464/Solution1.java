@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
  * 示例 3：
  * 输入：nums = [3,7]
  * 输出：12
- *  
+ * 
  * 提示：
  * 2 <= nums.length <= 500
  * 1 <= nums[i] <= 10^3

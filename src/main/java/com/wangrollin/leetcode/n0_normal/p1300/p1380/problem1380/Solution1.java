@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
  * m == mat.length
  * n == mat[i].length
  * 1 <= n, m <= 50
- * 1 <= matrix[i][j] <= 10^5
+ * 1 <=matrix[i][j]<= 10^5
  * 矩阵中的所有元素都是不同的
  *
  * 来源：力扣（LeetCode）

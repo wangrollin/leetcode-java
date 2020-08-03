@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 用栈操作构建数组
  *
- * 给你一个目标数组 target 和一个整数 n。每次迭代，需要从  list = {1,2,3..., n} 中依序读取一个数字。
+ * 给你一个目标数组 target 和一个整数 n。每次迭代，需要从 list = {1,2,3..., n} 中依序读取一个数字。
  * 请使用下述操作来构建目标数组 target ：
  * Push：从 list 中读取一个新元素， 并将其推入数组中。
  * Pop：删除数组中的最后一个元素。
@@ -38,7 +38,7 @@ import java.util.List;
  *
  * 提示：
  * 1 <= target.length <= 100
- * 1 <= target[i] <= 100
+ * 1 <= target[i]<= 100
  * 1 <= n <= 100
  * target 是严格递增的
  *

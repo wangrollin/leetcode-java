@@ -53,8 +53,8 @@ package com.wangrollin.leetcode.n0_normal.p900.p990.problem999;
  *
  * 提示：
  * board.length == board[i].length == 8
- * board[i][j] 可以是 'R'，'.'，'B' 或 'p'
- * 只有一个格子上存在 board[i][j] == 'R'
+ * board[i][j] 可以是'R'，'.'，'B'或'p'
+ * 只有一个格子上存在board[i][j] == 'R'
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/available-captures-for-rook

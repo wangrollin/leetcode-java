@@ -16,11 +16,11 @@ import java.util.List;
  * 示例 2：
  * 输入：[-7,-3,2,3,11]
  * 输出：[4,9,9,49,121]
- *  
+ * 
  * 提示：
  * 1 <= A.length <= 10000
  * -10000 <= A[i] <= 10000
- * A 已按非递减顺序排序。
+ * A已按非递减顺序排序。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/squares-of-a-sorted-array

@@ -36,7 +36,7 @@ public class Solution1 {
         return calSum(root, 0, sum);
     }
 
-    public boolean calSum(TreeNode node, int curSum, final int targetSum) {
+    private boolean calSum(TreeNode node, int curSum, final int targetSum) {
 
         if (node.left == null && node.right == null) {
             return curSum + node.val == targetSum;

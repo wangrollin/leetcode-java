@@ -17,6 +17,7 @@ package com.wangrollin.leetcode.n0_normal.p0.p20.problem21;
 public class Solution1 {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
         if (l1 == null) {
             return l2;
         }
@@ -47,9 +48,5 @@ public class Solution1 {
                 curIndex2 = curIndex2.next;
             }
         }
-    }
-
-    public static void main(String[] args) {
-
     }
 }

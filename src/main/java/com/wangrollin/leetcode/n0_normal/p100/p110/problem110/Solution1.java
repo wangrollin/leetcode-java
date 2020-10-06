@@ -46,7 +46,7 @@ public class Solution1 {
         }
     }
 
-    public int getHeight(TreeNode node) {
+    private int getHeight(TreeNode node) {
 
         if (node == null) {
             return 0;

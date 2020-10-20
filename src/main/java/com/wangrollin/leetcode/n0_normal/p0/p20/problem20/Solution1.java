@@ -39,10 +39,12 @@ import java.util.Stack;
 public class Solution1 {
 
     public boolean isAPair(Character a, Character b) {
+
         return (a == '(' && b == ')') || (a == '[' && b == ']') || (a == '{' && b == '}');
     }
 
     public boolean isValid(String s) {
+
         if (s == null || s.equals("")) {
             return true;
         }

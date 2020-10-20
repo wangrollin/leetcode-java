@@ -26,6 +26,7 @@ package com.wangrollin.leetcode.n0_normal.p0.p20.problem27;
 public class Solution2 {
 
     public int removeElement(int[] nums, int val) {
+
         if (nums == null || nums.length == 0) {
             return 0;
         }
@@ -39,9 +40,5 @@ public class Solution2 {
             }
         }
         return validIndex;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

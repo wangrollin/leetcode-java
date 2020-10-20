@@ -23,22 +23,20 @@ package com.wangrollin.leetcode.n0_normal.p0.p20.problem26;
  */
 public class Solution1 {
 
-    public static int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {
+
         if (nums == null || nums.length == 0) {
             return 0;
         }
+
         int len = nums.length;
         int rltIndex = 0;
+
         for (int i = 0; i < nums.length; ++i) {
             if (nums[i] != nums[rltIndex]) {
                 nums[++rltIndex] = nums[i];
             }
         }
         return rltIndex + 1;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(removeDuplicates(new int[]{1, 1, 2}));
-        System.out.println(removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
     }
 }

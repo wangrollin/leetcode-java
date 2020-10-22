@@ -39,8 +39,4 @@ public class Solution1 {
         digits[0] = 1;
         return digits;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

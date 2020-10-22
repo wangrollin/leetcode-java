@@ -27,7 +27,8 @@ import java.util.List;
  */
 public class Solution1 {
 
-    public static List<List<Integer>> generate(int numRows) {
+    public List<List<Integer>> generate(int numRows) {
+
         if (numRows == 0) {
             return new ArrayList<>();
         }
@@ -44,15 +45,5 @@ public class Solution1 {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        List<List<Integer>> result = generate(5);
-        for (List<Integer> integers : result) {
-            for (Integer integer : integers) {
-                System.out.print(integer + ",");
-            }
-            System.out.println();
-        }
     }
 }

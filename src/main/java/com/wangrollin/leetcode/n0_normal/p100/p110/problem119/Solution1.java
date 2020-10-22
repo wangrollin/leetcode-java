@@ -16,12 +16,15 @@ import java.util.List;
  *
  * 优化算法到 O(k) 空间复杂度
  *
+ * 来源：力扣（LeetCode）
+ * 链接：https://leetcode-cn.com/problems/pascals-triangle-ii/
+ *
  * Solution1
  * 遍历的时候复用数组
  */
 public class Solution1 {
 
-    public static List<Integer> getRow(int rowIndex) {
+    public List<Integer> getRow(int rowIndex) {
         rowIndex += 1;
         List<Integer> result = new ArrayList<>();
         for (int i = 0; i < rowIndex; ++i) {
@@ -40,13 +43,5 @@ public class Solution1 {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        List<Integer> result = getRow(5);
-        for (Integer i : result) {
-            System.out.print(i + ",");
-        }
-        System.out.println();
     }
 }

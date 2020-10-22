@@ -19,10 +19,13 @@ package com.wangrollin.leetcode.n0_normal.p0.p80.problem83;
  * 遍历一遍就行了
  */
 public class Solution1 {
+
     public static ListNode deleteDuplicates(ListNode head) {
+
         if (head == null) {
             return null;
         }
+
         ListNode validNode = head;
         for (ListNode curNode = head.next; curNode != null; curNode = curNode.next) {
             if (validNode.val != curNode.val) {
@@ -32,16 +35,5 @@ public class Solution1 {
         }
         validNode.next = null;
         return head;
-    }
-
-    public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        node1.next = new ListNode(1);
-        node1.next.next = new ListNode(2);
-        ListNode result = deleteDuplicates(node1);
-        while (result != null) {
-            System.out.println(result.val);
-            result = result.next;
-        }
     }
 }

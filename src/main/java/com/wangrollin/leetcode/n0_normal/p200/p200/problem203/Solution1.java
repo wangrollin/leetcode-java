@@ -9,12 +9,16 @@ package com.wangrollin.leetcode.n0_normal.p200.p200.problem203;
  * 输入: 1->2->6->3->4->5->6, val = 6
  * 输出: 1->2->3->4->5
  *
+ * 来源：力扣（LeetCode）
+ * 链接：https://leetcode-cn.com/problems/remove-linked-list-elements/
+ *
  * Solution1
  * 哨兵算法
  */
 public class Solution1 {
 
     public ListNode removeElements(ListNode head, int val) {
+
         ListNode firstNode = new ListNode(0);
         firstNode.next = head;
         ListNode curNode = firstNode;

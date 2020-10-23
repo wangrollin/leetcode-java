@@ -33,9 +33,12 @@ public class Solution2 {
                 indexMap.put(s.charAt(i), new ArrayList<>(Arrays.asList(i)));
             }
         }
-        var result = indexMap.entrySet().stream().filter(entry ->
-                entry.getValue().size() == 1
-        ).min(Comparator.comparingInt(x -> x.getValue().get(0)));
+        var result =
+                indexMap
+                        .entrySet()
+                        .stream()
+                        .filter(entry -> entry.getValue().size() == 1)
+                        .min(Comparator.comparingInt(x -> x.getValue().get(0)));
 
         if (result.isPresent()) {
             return result.get().getValue().get(0);

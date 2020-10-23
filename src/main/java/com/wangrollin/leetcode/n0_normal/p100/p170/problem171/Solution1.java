@@ -35,6 +35,7 @@ package com.wangrollin.leetcode.n0_normal.p100.p170.problem171;
 public class Solution1 {
 
     public int titleToNumber(String s) {
+
         int result = 0;
         for (int i = 0; i < s.length(); i++) {
             int tmp = s.charAt(i) - 64;
@@ -47,6 +48,6 @@ public class Solution1 {
     }
 
     public static void main(String[] args) {
-
+        System.out.println((char)64);
     }
 }

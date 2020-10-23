@@ -35,6 +35,7 @@ package com.wangrollin.leetcode.n0_normal.p100.p160.problem168;
 public class Solution1 {
 
     public String convertToTitle(int n) {
+
         StringBuilder result = new StringBuilder();
         while (n != 0) {
             result.append((char) ((n - 1) % 26 + 'A'));
@@ -43,6 +44,4 @@ public class Solution1 {
         return result.reverse().toString();
     }
 
-    public static void main(String[] args) {
-    }
 }

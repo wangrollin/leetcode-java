@@ -30,6 +30,7 @@ package com.wangrollin.leetcode.n0_normal.p200.p290.problem299;
 public class Solution2 {
 
     public String getHint(String secret, String guess) {
+
         int[] secretBucket = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         int[] guessBucket = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 

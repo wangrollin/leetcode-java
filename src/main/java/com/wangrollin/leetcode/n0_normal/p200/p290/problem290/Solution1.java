@@ -39,6 +39,7 @@ import java.util.Set;
 public class Solution1 {
 
     public boolean wordPattern(String pattern, String str) {
+
         int patternLen = pattern == null ? 0 : pattern.length();
         int wordListLen = str == null ? 0 : str.split(" ").length;
         if (patternLen != wordListLen) {

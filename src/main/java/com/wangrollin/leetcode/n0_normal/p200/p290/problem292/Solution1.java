@@ -16,7 +16,7 @@ package com.wangrollin.leetcode.n0_normal.p200.p290.problem292;
  * 链接：https://leetcode-cn.com/problems/nim-game
  *
  * Solution1
- *
+ * 推导公式
  */
 public class Solution1 {
 

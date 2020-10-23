@@ -20,10 +20,12 @@ package com.wangrollin.leetcode.n0_normal.p200.p200.problem206;
 public class Solution2 {
 
     public ListNode reverseList(ListNode head) {
+
         return reverseListRecursion(null, head);
     }
 
     private ListNode reverseListRecursion(ListNode preNode, ListNode curNode) {
+
         if (curNode == null) {
             return null;
         }

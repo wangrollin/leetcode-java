@@ -25,15 +25,12 @@ package com.wangrollin.leetcode.n0_normal.p100.p170.problem172;
 public class Solution1 {
 
     public int trailingZeroes(int n) {
+
         int result = 0;
         while (n >= 5) {
             result += n / 5;
             n /= 5;
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

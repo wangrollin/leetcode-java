@@ -33,7 +33,7 @@ import java.util.Arrays;
  */
 public class Solution1 {
 
-    public static int findRadius(int[] houses, int[] heaters) {
+    public int findRadius(int[] houses, int[] heaters) {
 
         Arrays.sort(houses);
         Arrays.sort(heaters);

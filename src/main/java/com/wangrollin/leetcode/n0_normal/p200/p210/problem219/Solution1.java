@@ -32,6 +32,7 @@ import java.util.Set;
 public class Solution1 {
 
     public static boolean containsNearbyDuplicate(int[] nums, int k) {
+
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
             if (set.contains(nums[i])) {
@@ -43,9 +44,5 @@ public class Solution1 {
             }
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(containsNearbyDuplicate(new int[]{1, 2, 3, 1}, 3));
     }
 }

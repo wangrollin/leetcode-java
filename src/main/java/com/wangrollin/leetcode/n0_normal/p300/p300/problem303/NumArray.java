@@ -22,13 +22,13 @@ package com.wangrollin.leetcode.n0_normal.p300.p300.problem303;
  * 1.每次都去累加的话，很慢
  * 2.做缓存，在初始化的时候，把n*n中可能的ij组合的结果都计算出来
  * 3.做缓存，在初始化的时候，把所有从0到i的和都计算出来，然后返回sum[j] - sum[i-1]
- *
  */
 public class NumArray {
 
     private int[] sums;
 
     public NumArray(int[] nums) {
+
         sums = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             if (i == 0) {
@@ -40,6 +40,7 @@ public class NumArray {
     }
 
     public int sumRange(int i, int j) {
+
         if (i == 0) {
             return sums[j];
         } else {

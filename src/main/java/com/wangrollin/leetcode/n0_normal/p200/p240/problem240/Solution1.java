@@ -32,7 +32,6 @@ public class Solution1 {
         if (matrix == null || matrix.length == 0) {
             return false;
         }
-        int Y = matrix.length;
         int X = matrix[0].length;
         if (X == 0) {
             return false;

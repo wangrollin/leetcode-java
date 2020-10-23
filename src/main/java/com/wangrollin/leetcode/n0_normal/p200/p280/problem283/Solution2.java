@@ -22,6 +22,7 @@ package com.wangrollin.leetcode.n0_normal.p200.p280.problem283;
 public class Solution2 {
 
     public void moveZeroes(int[] nums) {
+
         if (nums == null || nums.length <= 1) {
             return;
         }

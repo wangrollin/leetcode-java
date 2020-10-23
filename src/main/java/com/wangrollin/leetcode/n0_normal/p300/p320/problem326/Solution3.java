@@ -32,7 +32,6 @@ package com.wangrollin.leetcode.n0_normal.p300.p320.problem326;
  * (Math.log(n) / Math.log(3) + epsilon) % 1 <= 2 * epsilon;
  *
  * 转换成3进制，如果符合条件，则会匹配上
- *
  */
 public class Solution3 {
 

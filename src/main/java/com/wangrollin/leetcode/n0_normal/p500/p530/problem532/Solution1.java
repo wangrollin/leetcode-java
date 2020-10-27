@@ -58,10 +58,7 @@ public class Solution1 {
             }
             numSet.add(num);
         });
-        for (Integer i :
-                result) {
-            System.out.println(i);
-        }
+
         return result.size();
     }
 }

@@ -8,6 +8,12 @@
     <artifactId>leetcode-java</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <properties>
+        <sonar.projectKey>wangrollin_leetcode-java</sonar.projectKey>
+        <sonar.organization>wangrollin</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
+
     <build>
         <plugins>
             <plugin>

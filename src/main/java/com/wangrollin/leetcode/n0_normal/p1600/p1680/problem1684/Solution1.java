@@ -1,4 +1,4 @@
-package com.wangrollin.leetcode.n0_normal.p5000.p5600.p5600.problem5609;
+package com.wangrollin.leetcode.n0_normal.p1600.p1680.problem1684;
 
 import java.util.Arrays;
 

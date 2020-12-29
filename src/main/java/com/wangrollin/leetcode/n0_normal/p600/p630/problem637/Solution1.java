@@ -26,7 +26,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/average-of-levels-in-binary-tree
  * 
  * Solution1
- * 递归，超出内存限制，但也是一种思路
+ * 递归
  */
 public class Solution1 {
 

@@ -38,25 +38,29 @@ public class Solution1 {
         }
 
         List<Integer> counts = new ArrayList<>();
-        List<Integer> sums = new ArrayList<>();
-        cal(root, counts, sums, 1);
+        List<Double> avgs = new ArrayList<>();
+        cal(root, counts, avgs, 1);
 
-        for (int i = 0; i < counts.size(); i++) {
-            result.add((double) sums.get(i) / counts.get(i));
-        }
-        return result;
+        return avgs;
     }
 
-    private void cal(TreeNode node, List<Integer> counts, List<Integer> sums, int curDepth) {
+    private void cal(TreeNode node, List<Integer> counts, List<Double> avgs, int curDepth) {
 
         if (counts.size() < curDepth) {
             counts.add(1);
-            sums.add(node.val);
+            avgs.add((double) node.val);
         } else {
+            avgs.set(curDepth - 1, ((double) counts.get(curDepth - 1)) / (counts.get(curDepth - 1) + 1) * avgs.get(curDepth - 1)
+                    + ((double) node.val) / (counts.get(curDepth - 1) + 1));
             counts.set(curDepth - 1, counts.get(curDepth - 1) + 1);
-            sums.set(curDepth - 1, sums.get(curDepth - 1) + node.val);
         }
-        cal(node, counts, sums, curDepth + 1);
+
+        if (node.left != null) {
+            cal(node.left, counts, avgs, curDepth + 1);
+        }
+        if (node.right != null) {
+            cal(node.right, counts, avgs, curDepth + 1);
+        }
     }
 
     private static class TreeNode {

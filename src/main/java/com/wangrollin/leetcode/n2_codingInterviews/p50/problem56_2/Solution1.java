@@ -2,6 +2,7 @@ package com.wangrollin.leetcode.n2_codingInterviews.p50.problem56_2;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -25,7 +26,7 @@ import java.util.stream.Collectors;
  * 链接：https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof
  *
  * Solution1
- * 根据位数模3得出结果
+ * 根据位数模3，如果是出现三次，那就自动归零，只有出现一次的会留下痕迹
  */
 public class Solution1 {
 
@@ -33,9 +34,9 @@ public class Solution1 {
 
         List<String> reverseBiStr = Arrays.stream(nums)
                 .mapToObj(Integer::toBinaryString)
-                .map(StringBuilder::new)
-                .map(StringBuilder::reverse)
-                .map(StringBuilder::toString)
+                .map(((Function<? super String, StringBuilder>) StringBuilder::new)
+                        .andThen(StringBuilder::reverse)
+                        .andThen(StringBuilder::toString))
                 .collect(Collectors.toList());
 
         int maxLen = reverseBiStr.stream()

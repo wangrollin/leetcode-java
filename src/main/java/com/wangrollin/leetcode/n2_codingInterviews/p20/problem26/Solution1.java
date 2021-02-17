@@ -1,4 +1,4 @@
-package com.wangrollin.leetcode.n3_interview.problem26;
+package com.wangrollin.leetcode.n2_codingInterviews.p20.problem26;
 
 /**
  * 树的子结构

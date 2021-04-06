@@ -40,7 +40,7 @@ public class Solution1 {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
-        while (queue.size() != 0) {
+        while (!queue.isEmpty()) {
 
             int size = queue.size();
 
